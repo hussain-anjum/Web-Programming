@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product's Profile</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 align="center"><u> Product Profile Form</u></h1>
+
+    <section>
+      <form action="productdemo.php" method="post">
+        <!--Product Info-->
+        <fieldset
+          style="text-align: center; background-color: rgb(178, 201, 227)"
+        >
+          <legend style="font-size: large">
+            <b><i>Product Information</i></b>
+          </legend>
+          <br />
+          <label for="productName">Product Name</label><br />
+          <input
+            type="text"
+            id="productName"
+            name="Product_Name"
+            value=""
+          /><br /><br />
+
+          <label for="pid">Product ID</label><br />
+          <input type="text" id="pid" name="Product_id" value="" /><br /><br />
+
+          <label for="pimage">Product Image: </label>
+          <input type="file" id="pimage" name="Product_Image" /><br /><br />
+
+          <label for="category">Category</label><br />
+          <select id="category" name="Category">
+            <option value="">Select Category</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Apparel">Apparel</option>
+            <option value="Home">Home</option>
+            <option value="Books">Books</option>
+            <option value="Other">Other</option></select
+          ><br /><br />
+
+          <label for="price">Price</label><br />
+          <input
+            type="number"
+            id="price"
+            name="Price"
+            step="0.01"
+            min="0"
+          /><br /><br />
+
+          <label for="description">Description</label><br />
+          <textarea
+            id="description"
+            name="Description"
+            rows="3"
+            cols="30"
+          ></textarea
+          ><br /><br />
+
+          <label for="quantity">Quantity</label><br />
+          <input
+            type="number"
+            id="quantity"
+            name="Quantity"
+            min="0"
+          /><br /><br />
+
+          <label for="manufacturer">Manufacturer</label><br />
+          <input
+            type="text"
+            id="manufacturer"
+            name="Manufacturer"
+          /><br /><br />
+
+          <label for="release">Release Date</label><br />
+          <input type="date" id="release" name="Release_Date" /><br /><br />
+        </fieldset>
+        <br />
+
+        <section style="text-align: center">
+          <button type="submit"><b>Submit</b></button>
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
