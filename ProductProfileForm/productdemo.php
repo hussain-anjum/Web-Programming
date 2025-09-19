@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost:3307";
+$servername = "localhost";
 $username = "root";
-$password = "root";
-$dbname = "test";
+$password = "";
+$dbname = "formdb";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -21,7 +21,7 @@ $Quantity = $_POST['Quantity'];
 $Manufacturer = $_POST['Manufacturer'];
 $Release_Date = $_POST['Release_Date'];
 
-$sql = "INSERT INTO product (Product_Name, Product_ID, Product_Image, Category, Price, Description, Quantity, Manufacturer, Release_Date) 
+$sql = "INSERT INTO productdata (Product_Name, Product_ID, Product_Image, Category, Price, Description, Quantity, Manufacturer, Release_Date) 
     VALUES ('$Product_Name', $Product_ID, '$Product_Image', '$Category', '$Price', '$Description', $Quantity, '$Manufacturer', '$Release_Date')";
 
 if (mysqli_query($conn, $sql)) {

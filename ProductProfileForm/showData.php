@@ -13,10 +13,10 @@
 </head>
 <body>
 <?php
-$servername = "localhost:3307";
+$servername = "localhost";
 $username = "root";
-$password = "root";
-$dbname = "test";
+$password = "";
+$dbname = "formdb";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -25,7 +25,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM product";
+$sql = "SELECT * FROM productdata";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
