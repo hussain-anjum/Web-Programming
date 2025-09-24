@@ -42,6 +42,7 @@ if (mysqli_num_rows($result) > 0) {
         <th>Quantity</th>
         <th>Manufacturer</th>
         <th>Release Date</th>
+        <th>Action</th>
     </tr>
 <?php
   // output data of each row
@@ -57,6 +58,8 @@ if (mysqli_num_rows($result) > 0) {
         <td><?php echo $row["Quantity"]; ?></td>
         <td><?php echo $row["Manufacturer"]; ?></td>
         <td><?php echo $row["Release_Date"]; ?></td>
+        <td><a href="editData.php?Product_id=<?php echo $row["Product_id"]; ?>">Edit</a> | 
+        <a href="deleteData.php?Product_id=<?php echo $row["Product_id"]; ?>">Delete</a></td>
     </tr>
 <?php 
     } 
