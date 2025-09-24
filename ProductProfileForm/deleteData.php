@@ -20,5 +20,9 @@ if (mysqli_query($conn, $sql)) {
   echo "Error deleting record: " . mysqli_error($conn);
 }
 
+$newURL = "showData.php";
+header('Location: '.$newURL);
+die();
+
 mysqli_close($conn);
 ?>
