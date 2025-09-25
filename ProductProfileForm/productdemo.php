@@ -25,7 +25,8 @@ $sql = "INSERT INTO productdata (Product_Name, Product_ID, Product_Image, Catego
     VALUES ('$Product_Name', $Product_ID, '$Product_Image', '$Category', '$Price', '$Description', $Quantity, '$Manufacturer', '$Release_Date')";
 
 if (mysqli_query($conn, $sql)) {
-  echo "New record created successfully";
+  echo "New record created successfully<br><br>";
+  echo "<a href='showData.php'>See the Product List</a>";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

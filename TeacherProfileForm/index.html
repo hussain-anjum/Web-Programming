@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Profile</title>
+  </head>
+  <body>
+    <h1 align="middle"><u>Teacher Profile Form</u></h1>
+
+    <form action="teacherForm.php" method="post">
+      <!--Personal info-->
+      <section style="text-align: center">
+        <fieldset style="background-color: rgb(194, 223, 235)">
+          <legend style="font-size: larger">
+            <b><i>Personal Information:</i></b>
+          </legend>
+          <br />
+
+          <label for="fullName">Full Name: </label><br />
+          <input type="text" id="name" name="fullName" value="" /><br /><br />
+
+          <label for="nid">NID: </label><br />
+          <input type="text" id="nid" name="NID" value="" /><br />
+
+          <p>Select Gender:</p>
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label><br /><br />
+
+          <label for="Permanentaddress">Permanent Address: </label><br />
+          <textarea name="permanentaddress" rows="3" cols="20"></textarea>
+          <br /><br />
+
+          <label for="Presentaddress">Present Address: </label><br />
+          <textarea name="presentaddress" rows="3" cols="20"></textarea>
+          <br /><br />
+
+          <label for="mobile">Mobile: </label><br />
+          <input type="text" id="mobile" name="mobile" value="" /><br /><br />
+
+          <label for="email">Email: </label><br />
+          <input type="email" id="email" name="email" value="" /><br /><br />
+
+          <label for="imageFile">Attach image: </label>
+          <input type="file" id="imageFile" name="image" /><br /><br />
+        </fieldset>
+      </section>
+
+      <!--Professional Info-->
+      <section style="text-align: center">
+        <br />
+        <fieldset style="background-color: rgb(249, 235, 222)">
+          <legend style="font-size: larger">
+            <b><i>Professional Information:</i></b>
+          </legend>
+          <br />
+
+          <label for="faculty">Select Faculty: </label>
+          <select id="faculty" name="faculty">
+            <option value="facultyOfScience">
+              Faculty Of Science and Engineering
+            </option>
+            <option value="facultyOfArts">Faculty Of Arts</option>
+            <option value="facultyOfBBA">Faculty Of BBA</option>
+            <option value="facultyOfSocialScience">
+              Faculty Of Social Science
+            </option></select
+          ><br /><br />
+
+          <label for="dept">Select Department: </label>
+          <select id="dept" name="department">
+            <option value="deptOfCSE">Department Of CSE</option>
+            <option value="deptOfEEE">Department Of EEE</option>
+            <option value="deptOfESE">Department of ESE</option></select
+          ><br /><br />
+
+          <label for="designation">Designation: </label><br />
+          <select id="designation" name="designation">
+            <option value="Professor">Professor</option>
+            <option value="Associate Professor">Associate Professor</option>
+            <option value="Assistant Professor">Assistant Professor</option>
+            <option value="Lecturer">Lecturer</option></select
+          ><br /><br />
+
+          <label for="joiningDate">Joining Date: </label><br />
+          <input
+            type="date"
+            id="joiningDate"
+            name="joiningDate"
+            value=""
+          /><br /><br />
+
+          <label for="qualification">Highest Qualification: </label><br />
+          <input
+            type="text"
+            id="qualification"
+            name="qualification"
+            value=""
+          /><br /><br />
+
+          <label for="experience">Years of Experience: </label><br />
+          <input
+            type="number"
+            id="experience"
+            name="experience"
+            min="0"
+            value=""
+          /><br /><br />
+        </fieldset>
+      </section>
+
+      <!--Office Info-->
+      <section style="text-align: center">
+        <br />
+        <fieldset style="background-color: rgb(203, 203, 239)">
+          <legend style="font-size: larger">
+            <b><i>Office Information</i></b>
+          </legend>
+          <br />
+          <label for="office">Select Office: </label>
+          <select id="office" name="officeName">
+            <option value="N/A">N/A</option>
+            <option value="science">Science Building</option>
+            <option value="arts">Arts Building</option>
+            <option value="bba">BBA Building</option>
+            <option value="socialScience">
+              Social Science Building
+            </option></select
+          ><br /><br />
+
+          <label for="room">Room No.:</label><br />
+          <input
+            type="text"
+            placeholder="ex.(201)"
+            id="room"
+            name="roomNo"
+            value=""
+          /><br /><br />
+        </fieldset>
+      </section>
+      <br />
+
+      <!--Submit button-->
+      <section style="text-align: center">
+        <button type="submit" onclick="alert('Submitted Successfully!')">
+          <b>Submit</b>
+        </button>
+      </section>
+    </form>
+  </body>
+</html>
