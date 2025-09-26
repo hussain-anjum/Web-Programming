@@ -25,16 +25,28 @@
             id="productName"
             name="Product_Name"
             value=""
+            required
           /><br /><br />
 
           <label for="pid">Product ID</label><br />
-          <input type="text" id="pid" name="Product_id" value="" /><br /><br />
+          <input
+            type="text"
+            id="pid"
+            name="Product_id"
+            value=""
+            required
+          /><br /><br />
 
           <label for="pimage">Product Image: </label>
-          <input type="file" id="pimage" name="Product_Image" /><br /><br />
+          <input
+            type="file"
+            id="pimage"
+            name="Product_Image"
+            required
+          /><br /><br />
 
           <label for="category">Category: </label>
-          <select id="category" name="Category">
+          <select id="category" name="Category" required>
             <option value="">Select Category</option>
             <option value="Electronics">Electronics</option>
             <option value="Apparel">Apparel</option>
@@ -50,6 +62,7 @@
             name="Price"
             step="0.01"
             min="0"
+            required
           /><br /><br />
 
           <label for="description">Description</label><br />
@@ -67,6 +80,7 @@
             id="quantity"
             name="Quantity"
             min="0"
+            required
           /><br /><br />
 
           <label for="manufacturer">Manufacturer</label><br />
@@ -74,6 +88,7 @@
             type="text"
             id="manufacturer"
             name="Manufacturer"
+            required
           /><br /><br />
 
           <label for="release">Release Date</label><br />
