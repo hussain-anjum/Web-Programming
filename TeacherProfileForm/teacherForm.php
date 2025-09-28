@@ -32,14 +32,14 @@ $sql = "INSERT INTO teacherdata (fullName, NID, gender, permanentAddress, presen
 
 if (mysqli_query($conn, $sql)) {
   echo "New record created successfully<br><br>";
-  //echo "<a href='showData.php'>See the Teacher's Data</a>";
+  echo "<a href='./showTeacherData.php'>See the Teacher's Data</a><br>";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
 mysqli_close($conn);
 
-echo "Teacher's data are:<br>";
+echo "<br>Teacher's data are:<br>";
 echo "<pre>";
 print_r($_POST);
 echo "</pre>";

@@ -71,7 +71,7 @@ if (mysqli_num_rows($result) > 0) {
         <td><?php echo $row["qualification"]; ?></td>
         <td><?php echo $row["experience"]; ?></td>
         <td><a href="./editTeacherData.php?ID=<?php echo $row["ID"]; ?>">Edit</a> | 
-        <a href="./deleteData.php?ID=<?php echo $row["ID"]; ?>">Delete</a></td>
+        <a href="./deleteTeacherData.php?ID=<?php echo $row["ID"]; ?>">Delete</a></td>
     </tr>
 <?php 
     } 
