@@ -1,0 +1,42 @@
+h1 {
+  font-family: Lucida Sans;
+  color: black;
+  text-align: center;
+}
+h2 {
+  font-family: Lucida Sans;
+  color: darkslategrey;
+}
+p,
+article,
+table,
+li {
+  font-family: Times New Roman;
+  font-size: 18px;
+  width: 100%;
+}
+span {
+  font-family: Cambria, Cochin;
+  display: block;
+  text-align: center;
+  font-size: medium;
+  color: gray;
+}
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+a:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+footer {
+  text-align: center;
+}
