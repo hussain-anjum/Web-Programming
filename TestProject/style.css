@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(231, 246, 254);
+  background-color: #e7f6fe;
   margin: 20px 50px 20px 50px;
 }
 section {
@@ -57,6 +57,11 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 10px;
+}
+#skill {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  padding: 5px;
 }
 iframe {
   display: block;
