@@ -17,7 +17,7 @@
 
   <body>
     <header>
-      <h1>
+      <h1 id="title">
         <u>Profile</u>
       </h1>
       <img
@@ -26,23 +26,25 @@
         height="300"
       />
 
-      <p align="center" style="font-size: larger">
-        <b><i>Md. Hussain Anjum Ratul</i></b>
-      </p>
-      <span>BSc. in CSE, JKKNIU</span><br />
-      <hr />
+      <div class="intro">
+        <p id="name">
+          <b><i>Md. Hussain Anjum Ratul</i></b>
+        </p>
+        <span>BSc. in CSE, JKKNIU</span><br />
+        <hr />
+      </div>
     </header>
 
     <main>
       <!--About section-->
       <section>
         <h2>About:</h2>
-        <article>
+        <p>
           I'm Ratul, a CSE undergrad with a strong focus on web development. I
           enjoy building full-stack applications with modern tools like Python,
           Django, React, and MySQL. Alongside development, I’m also exploring
           cybersecurity to broaden my skill set and problem solving approach.
-        </article>
+        </p>
       </section>
       <br />
 
@@ -162,29 +164,31 @@
       <!--Get connects section-->
       <section>
         <h2>Get connect with me:</h2>
-        <a
-          href="https://www.linkedin.com/in/hussain-anjum02/"
-          target="_main"
-          style="font-size: large"
-        >
-          <i class="fab fa-linkedin-in"></i> LinkedIn</a
-        >
-        <br />
-        <a
-          href="https://www.facebook.com/hussain.anjum.02/"
-          target="_main"
-          style="font-size: large"
-        >
-          <i class="fab fa-facebook"></i> Facebook</a
-        >
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/hussain-anjum02/"
+            target="_main"
+            style="font-size: large"
+          >
+            <i class="fab fa-linkedin-in"></i> LinkedIn</a
+          >
+          <br />
+          <a
+            href="https://www.facebook.com/hussain.anjum.02/"
+            target="_main"
+            style="font-size: large"
+          >
+            <i class="fab fa-facebook"></i> Facebook</a
+          >
 
-        <br />
-        <a
-          href="https://www.instagram.com/hussain_anjum02/"
-          target="_main"
-          style="font-size: large"
-          ><i class="fa-brands fa-instagram"></i> Instagram</a
-        >
+          <br />
+          <a
+            href="https://www.instagram.com/hussain_anjum02/"
+            target="_main"
+            style="font-size: large"
+            ><i class="fa-brands fa-instagram"></i> Instagram</a
+          >
+        </div>
       </section>
 
       <br />
@@ -204,6 +208,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
+      <br />
       <hr />
     </main>
 
