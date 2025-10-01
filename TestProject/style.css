@@ -9,6 +9,13 @@ body {
 #title {
   margin-bottom: 20px;
 }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+}
 #name {
   font-size: larger;
   text-align: center;
@@ -17,6 +24,13 @@ body {
 .intro {
   margin-top: 10px;
   margin-bottom: 20px;
+}
+span {
+  font-family: Cambria, Cochin;
+  display: block;
+  text-align: center;
+  font-size: medium;
+  color: gray;
 }
 section {
   background-color: rgb(215, 225, 239);
@@ -35,13 +49,7 @@ h2 {
   font-family: Lucida Sans;
   color: rgb(16, 96, 96);
 }
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid lightgray;
-  border-radius: 10px;
-}
+
 p,
 table,
 li {
@@ -49,13 +57,7 @@ li {
   font-size: 18px;
   width: 100%;
   margin-top: 10px;
-}
-span {
-  font-family: Cambria, Cochin;
-  display: block;
-  text-align: center;
-  font-size: medium;
-  color: gray;
+  line-height: 25px;
 }
 a {
   text-decoration: none;
@@ -73,11 +75,12 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 10px;
+  text-align: center;
 }
 #skill {
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .social {
   margin-top: 10px;
@@ -90,5 +93,8 @@ iframe {
   border-radius: 10px;
 }
 footer {
+  margin-top: 20px;
+  font-family: "Lucida Sans";
   text-align: center;
+  line-height: 25px;
 }
