@@ -2,11 +2,24 @@
   padding: 0;
   margin: 0;
 }
+/* .navbar {
+  background-color: rgba(215, 225, 239, 1);
+  width: auto;
+  position: absolute;
+  margin-bottom: 50px;
+}
+div.navbar a {
+  color: rgb(16, 96, 96);
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+} */
 body {
   background-color: #e7f6fe;
-  margin: 20px 30px 20px 30px;
 }
 #title {
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 img {
@@ -32,13 +45,18 @@ span {
   font-size: medium;
   color: gray;
 }
-section {
+section.about,
+section.edu,
+section.skill,
+section.proj,
+section.contact,
+section.loc {
   background-color: rgb(215, 225, 239);
   border: 1px solid lightgray;
   border-radius: 10px;
   padding: 20px;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 h1 {
   font-family: Lucida Sans;
@@ -94,6 +112,7 @@ iframe {
 }
 footer {
   margin-top: 20px;
+  margin-bottom: 10px;
   font-family: "Lucida Sans";
   text-align: center;
   line-height: 25px;
