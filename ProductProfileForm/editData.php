@@ -11,7 +11,6 @@ if (!$conn) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["Product_id"])) {
-  // Update record
   $product_id = $_POST["Product_id"];
   $product_name = $_POST["Product_Name"];
   $product_image = $_POST["Product_Image"];
@@ -40,7 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["Product_id"])) {
     echo "<p>Error updating record: " . mysqli_error($conn) . "</p>";
   }
 } elseif (isset($_GET["Product_id"])) {
-  // Show form with existing data
   $product_id = $_GET["Product_id"];
   $sql = "SELECT * FROM productdata WHERE Product_id = '$product_id'";
   $result = mysqli_query($conn, $sql);
@@ -60,8 +58,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["Product_id"])) {
     <label>Product Name:</label><br>
     <input type="text" name="Product_Name" value="<?php echo htmlspecialchars($row['Product_Name']); ?>"><br><br>
 
-    <label>Product Image:</label><br>
-    <input type="text" name="Product_Image" value="<?php echo htmlspecialchars($row['Product_Image']); ?>"><br><br>
+    <label>Product Image:</label>
+    <input type="file" name="Product_Image" value="<?php echo htmlspecialchars($row['Product_Image']); ?>"><br><br>
 
     <label>Category:</label><br>
     <select name="Category">
