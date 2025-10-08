@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Data</title>
+    <title>Product List</title>
     <style>
     table, th, td {
         border: 1px solid black;
@@ -30,7 +30,7 @@ $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
 ?>
-<h2 align="center"><u>Product Data</u></h2>
+<h2 align="center"><u>Product List</u></h2>
 <table style="width: 100%;">
     <tr>
         <th>Product Name</th>

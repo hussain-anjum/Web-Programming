@@ -90,8 +90,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['ID'])) {
         <label>Email:</label><br>
         <input type="email" name="email" value="<?php echo htmlspecialchars($row['email']); ?>"><br><br>
 
-        <label>Image:</label>
-        <input type="file" name="image" value="<?php echo htmlspecialchars($row['image']); ?>"><br><br>
+        <label>Image:</label><br>
+        <input type="text" name="image" value="<?php echo htmlspecialchars($row['image']); ?>"><br><br>
 
         <label>Faculty:</label><br>
         <input type="text" name="faculty" value="<?php echo htmlspecialchars($row['faculty']); ?>"><br><br>

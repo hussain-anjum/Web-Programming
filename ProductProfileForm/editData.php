@@ -53,13 +53,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["Product_id"])) {
 </head>
 <body>
   <h2 align="center"><u>Edit Product Info</u></h2>
-  <form action="editData.php" method="post">
+  <form action="editData.php" method="post" enctype="multipart/form-data">
     <input type="hidden" name="Product_id" value="<?php echo htmlspecialchars($row['Product_id']); ?>">
     <label>Product Name:</label><br>
     <input type="text" name="Product_Name" value="<?php echo htmlspecialchars($row['Product_Name']); ?>"><br><br>
 
-    <label>Product Image:</label>
-    <input type="file" name="Product_Image" value="<?php echo htmlspecialchars($row['Product_Image']); ?>"><br><br>
+    <label>Product Image:</label><br>
+    <input type="text" name="Product_Image" value="<?php echo htmlspecialchars($row['Product_Image']); ?>"><br><br>
 
     <label>Category:</label><br>
     <select name="Category">
