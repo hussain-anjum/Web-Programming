@@ -15,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['ID'])) {
   $fullName = mysqli_real_escape_string($conn, $_POST['fullName']);
   $NID = mysqli_real_escape_string($conn, $_POST['NID']);
   $gender = mysqli_real_escape_string($conn, $_POST['gender']);
-  $permanentAddress = mysqli_real_escape_string($conn, $_POST['permanentAddress']);
   $presentAddress = mysqli_real_escape_string($conn, $_POST['presentAddress']);
   $mobile = mysqli_real_escape_string($conn, $_POST['mobile']);
   $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -31,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['ID'])) {
     fullName = '$fullName',
     NID = '$NID',
     gender = '$gender',
-    permanentAddress = '$permanentAddress',
     presentAddress = '$presentAddress',
     mobile = '$mobile',
     email = '$email',
@@ -77,9 +75,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['ID'])) {
 
         <label>Gender:</label><br>
         <input type="text" name="gender" value="<?php echo htmlspecialchars($row['gender']); ?>"><br><br>
-
-        <label>Permanent Address:</label><br>
-        <textarea name="permanentAddress" rows="2" cols="40"><?php echo htmlspecialchars($row['permanentAddress']); ?></textarea><br><br>
 
         <label>Present Address:</label><br>
         <textarea name="presentAddress" rows="2" cols="40"><?php echo htmlspecialchars($row['presentAddress']); ?></textarea><br><br>

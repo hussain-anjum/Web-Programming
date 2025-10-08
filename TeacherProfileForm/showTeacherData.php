@@ -37,7 +37,6 @@ if (mysqli_num_rows($result) > 0) {
         <th>Full Name</th>
         <th>NID</th> 
         <th>Gender</th>
-        <th>Permanent Address</th>
         <th>Present Address</th>
         <th>Mobile</th>
         <th>Email</th>
@@ -59,7 +58,6 @@ if (mysqli_num_rows($result) > 0) {
         <td><?php echo $row["fullName"]; ?></td>
         <td><?php echo $row["NID"]; ?></td>
         <td><?php echo $row["gender"]; ?></td>
-        <td><?php echo $row["permanentAddress"]; ?></td>
         <td><?php echo $row["presentAddress"]; ?></td>
         <td><?php echo $row["mobile"]; ?></td>
         <td><?php echo $row["email"]; ?></td>

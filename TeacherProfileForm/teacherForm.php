@@ -14,7 +14,6 @@ if (!$conn) {
 $fullName = $_POST['fullName'];
 $NID = $_POST['NID'];
 $gender = $_POST['gender'];
-$permanentAddress = $_POST['permanentAddress'];
 $presentAddress = $_POST['presentAddress'];
 $mobile = $_POST['mobile'];
 $email = $_POST['email'];
@@ -27,8 +26,8 @@ $qualification = $_POST['qualification'];
 $experience = $_POST['experience'];
 
 
-$sql = "INSERT INTO teacherdata (fullName, NID, gender, permanentAddress, presentAddress, mobile, email, image, faculty, department, designation, joiningDate, 	qualification, experience) 
-    VALUES ('$fullName', '$NID', '$gender', '$permanentAddress', '$presentAddress', '$mobile', '$email', '$image', '$faculty', '$department', '$designation', '$joiningDate', '$qualification', $experience)";
+$sql = "INSERT INTO teacherdata (fullName, NID, gender, presentAddress, mobile, email, image, faculty, department, designation, joiningDate, 	qualification, experience) 
+    VALUES ('$fullName', '$NID', '$gender', '$presentAddress', '$mobile', '$email', '$image', '$faculty', '$department', '$designation', '$joiningDate', '$qualification', $experience)";
 
 if (mysqli_query($conn, $sql)) {
   echo "New record created successfully<br><br>";
