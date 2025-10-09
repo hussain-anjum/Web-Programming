@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile</title>
+  </head>
+  <body>
+    <h1 align="middle"><u>Student Profile Form</u></h1>
+
+    <form action="studentForm.php" method="post">
+      <!--Personal info-->
+      <section style="text-align: center">
+        <fieldset style="background-color: antiquewhite">
+          <legend style="font-size: larger">
+            <b><i>Personal Information:</i></b>
+          </legend>
+          <br />
+
+          <label for="fullName">Full Name: </label><br />
+          <input type="text" id="name" name="name" value="" /><br /><br />
+
+          <label for="fatherName">Father's Name: </label><br />
+          <input
+            type="text"
+            id="fathername"
+            name="fatherName"
+            value=""
+          /><br /><br />
+
+          <label for="motherName">Mother's Name: </label><br />
+          <input
+            type="text"
+            id="mothername"
+            name="motherName"
+            value=""
+          /><br /><br />
+
+          <label for="dob">Date of Birth: </label><br />
+          <input type="date" id="dob" name="dob" value="" /><br /><br />
+
+          <p>Select Gender:</p>
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="male">Male</label>
+          <input type="radio" id="css" name="gender" value="Female" />
+          <label for="css">Female</label><br /><br />
+
+          <label for="presentAddress">Present Address: </label><br />
+          <textarea
+            id="presentAddress"
+            name="presentAddress"
+            rows="3"
+            cols="20"
+          ></textarea>
+          <br /><br />
+
+          <label for="mobile">Mobile: </label><br />
+          <input type="text" id="mobile" name="mobile" value="" /><br /><br />
+
+          <label for="email">Email: </label><br />
+          <input type="email" id="email" name="email" value="" /><br /><br />
+
+          <label for="imageFile">Attach image: </label>
+          <input type="file" id="imageFile" name="image" /><br /><br />
+        </fieldset>
+      </section>
+
+      <!--Academic Info-->
+      <section style="text-align: center">
+        <br />
+        <fieldset style="background-color: rgb(189, 231, 217)">
+          <legend style="font-size: larger">
+            <b><i>Academic Information:</i></b>
+          </legend>
+          <br />
+
+          <label for="faculty">Select Faculty: </label>
+          <select id="faculty" name="faculty">
+            <option value="facultyOfScience">
+              Faculty Of Science and Engineering
+            </option>
+            <option value="facultyOfArts">Faculty Of Arts</option>
+            <option value="facultyOfBBA">Faculty Of BBA</option>
+            <option value="facultyOfSocialScience">
+              Faculty Of Social Science
+            </option></select
+          ><br /><br />
+
+          <label for="dept">Select Department: </label>
+          <select id="dept" name="department">
+            <option value="deptOfCSE">Department Of CSE</option>
+            <option value="deptOfEEE">Department Of EEE</option>
+            <option value="deptOfESE">Department of ESE</option></select
+          ><br /><br />
+
+          <label for="hall">Select Hall: </label>
+          <select id="hall" name="hallName">
+            <option value="N/A">N/A</option>
+            <option value="bidrohi">Bidrohi</option>
+            <option value="agnibina">Agnibina</option>
+            <option value="shiulimala">Shiulimala</option>
+            <option value="dolonchapa">Dolonchapa</option></select
+          ><br /><br />
+
+          <label for="roll">Roll: </label><br />
+          <input type="text" id="roll" name="roll" value="" /><br /><br />
+
+          <label for="regNo">Reg. No: </label><br />
+          <input type="text" id="regNo" name="regNo" value="" /><br /><br />
+
+          <label for="session">Session: </label><br />
+          <input type="text" id="session" name="session" value="" /><br /><br />
+        </fieldset>
+      </section>
+      <br />
+
+      <!--Submit button-->
+      <section style="text-align: center">
+        <button type="submit">
+          <b>Submit</b>
+        </button>
+      </section>
+    </form>
+  </body>
+</html>
