@@ -29,11 +29,11 @@ $session = $_POST['session'];
 
 
 $sql = "INSERT INTO studentdata (name, fatherName, motherName, dob, gender, presentAddress, mobile, email, image, faculty, department, hallName, roll, regNo, session) 
-    VALUES ('$name', '$fatherName', '$motherName', '$dob', '$gender', '$presentAddress', '$mobile', '$email', '$image', '$faculty', '$department', '$hallName', '$roll', '$regNo', '$session)";
+    VALUES ('$name', '$fatherName', '$motherName', '$dob', '$gender', '$presentAddress', '$mobile', '$email', '$image', '$faculty', '$department', '$hallName', '$roll', '$regNo', '$session')";
 
 if (mysqli_query($conn, $sql)) {
   echo "New record created successfully<br><br>";
-//   echo "<a href='./showStudentData.php'>See the Teacher's Data</a><br>";
+  echo "<a href='./showStudentData.php'>See the Student's Data</a><br>";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
