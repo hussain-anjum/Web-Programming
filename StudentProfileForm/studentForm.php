@@ -33,7 +33,7 @@ $sql = "INSERT INTO studentdata (name, fatherName, motherName, dob, gender, pres
 
 if (mysqli_query($conn, $sql)) {
   echo "New record created successfully<br><br>";
-  echo "<a href='./showStudentData.php'>See the Student's Data</a><br>";
+  echo "<a href='./showStudentData.php'>See the Student's Data</a><br><br>";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
