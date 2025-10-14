@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['ID'])) {
       <title>Edit Teacher</title>
     </head>
     <body>
-      <h2 align="center"><u>Edit Teacher Info</u></h2>
+      <h2 align="center"><u>Edit Teacher Data</u></h2>
       <form action="editTeacherData.php" method="post">
         <input type="hidden" name="ID" value="<?php echo htmlspecialchars($row['ID']); ?>">
 
