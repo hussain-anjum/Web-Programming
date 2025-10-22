@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHTML Events</title>
+  </head>
+  <body style="text-align: center">
+    <h2>HTML Events</h2>
+    <p id="message"></p>
+    <button onmouseover="showMessage('Mouse Over!', this)">Hover Over Me</button
+    ><br /><br />
+    <button onclick="showMessage('Clicked!', this)">Click Me</button
+    ><br /><br />
+    <input
+      type="text"
+      onkeypress="showMessage('Key Pressed!', this)"
+      placeholder="Press any key"
+    /><br /><br />
+    <script>
+      function showMessage(action, element) {
+        document.getElementById("message").innerHTML =
+          "I am a CSE student (" + action + ")";
+        if (element.tagName === "BUTTON") {
+          element.style.backgroundColor = "lightblue";
+        }
+      }
+    </script>
+  </body>
+</html>
