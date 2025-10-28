@@ -48,7 +48,7 @@ if (mysqli_num_rows($result) > 0) {
         <th>Roll</th>
         <th>Reg. No</th>
         <th>Session</th>
-        <!-- <th>Action</th> -->
+        <th>Action</th>
     </tr>
 <?php
   // output data of each row
@@ -70,6 +70,8 @@ if (mysqli_num_rows($result) > 0) {
         <td><?php echo $row["roll"]; ?></td>
         <td><?php echo $row["regNo"]; ?></td>
         <td><?php echo $row["session"]; ?></td>
+        <td><a href="./editStudentData.php?ID=<?php echo $row["roll"]; ?>">Edit</a> | 
+        <a href="./deleteStudentData.php?ID=<?php echo $row["roll"]; ?>">Delete</a></td>
     </tr>
 <?php 
     } 
