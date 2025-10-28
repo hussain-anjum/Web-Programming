@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronics Product</title>
+  </head>
+  <body>
+    <h1 align="center"><u>Electronics Product Entry Form</u></h1>
+    <form action="save_product.php" method="POST">
+      <table align="center" cellpadding="8">
+        <tr>
+          <td><label for="p_name">Product Name:</label></td>
+          <td><input type="text" id="p_name" name="p_name" required /></td>
+        </tr>
+        <tr>
+          <td><label for="brand">Brand:</label></td>
+          <td><input type="text" id="brand" name="brand" required /></td>
+        </tr>
+        <tr>
+          <td><label for="model_number">Model Number:</label></td>
+          <td>
+            <input type="text" id="model_number" name="model_number" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="category">Category:</label></td>
+          <td>
+            <select id="category" name="category" required>
+              <option value="">--Select Category--</option>
+              <option value="Mobile">Mobile</option>
+              <option value="Laptop">Laptop</option>
+              <option value="Tablet">Tablet</option>
+              <option value="TV">TV</option>
+              <option value="Accessory">Accessory</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="price">Price (USD):</label></td>
+          <td>
+            <input type="number" step="0.01" id="price" name="price" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="quantity">Quantity:</label></td>
+          <td>
+            <input type="number" id="quantity" name="quantity" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="warranty">Warranty Period (months):</label></td>
+          <td>
+            <input type="number" id="warranty" name="warranty" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="description">Description:</label></td>
+          <td>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              cols="30"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Save Product" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
