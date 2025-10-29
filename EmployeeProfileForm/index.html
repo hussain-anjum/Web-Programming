@@ -4,12 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee Profile Form</title>
+    <script>
+      function Validation() {
+        const name = document.forms["employeeForm"]["name"].value.trim();
+        const fatherName = document.forms["employeeForm"]["Fname"].value.trim();
+        const motherName = document.forms["employeeForm"]["Mname"].value.trim();
+        const gender = document.forms["employeeForm"]["gender"].value;
+        const designation =
+          document.forms["employeeForm"]["designation"].value.trim();
+        const dob = document.forms["employeeForm"]["dob"].value;
+        const presentAddress =
+          document.forms["employeeForm"]["present_address"].value.trim();
+        const permanentAddress =
+          document.forms["employeeForm"]["permanent_address"].value.trim();
+        const image = document.forms["employeeForm"]["image"].value;
+
+        if (name == "") {
+          alert("Please enter your Name");
+          return false;
+        }
+        if (fatherName == "") {
+          alert("Please enter your Father’s Name");
+          return false;
+        }
+        if (motherName == "") {
+          alert("Please enter your Mother’s Name");
+          return false;
+        }
+        if (gender == "") {
+          alert("Please select your Gender");
+          return false;
+        }
+        if (designation == "") {
+          alert("Please enter your Designation");
+          return false;
+        }
+        if (dob == "") {
+          alert("Please select your Date of Birth");
+          return false;
+        }
+        if (presentAddress == "") {
+          alert("Please enter your Present Address");
+          return false;
+        }
+        if (permanentAddress == "") {
+          alert("Please enter your Permanent Address");
+          return false;
+        }
+        // Need to fix...
+        if (image == "") {
+          alert("Please upload your Image");
+          return false;
+        }
+
+        alert("Form submitted successfully!");
+        return true;
+      }
+    </script>
   </head>
   <body>
     <h1 align="center"><u>Employee Profile</u></h1>
     <form
       name="employeeForm"
-      onsubmit="returnValidation()"
+      onsubmit="return Validation()"
       enctype="multipart/form-data"
     >
       <table align="center" cellpadding="8">
@@ -86,61 +143,5 @@
         </tr>
       </table>
     </form>
-
-    <script>
-      function returnValidation() {
-        const name = document.forms["employeeForm"]["name"].value.trim();
-        const fatherName = document.forms["employeeForm"]["Fname"].value.trim();
-        const motherName = document.forms["employeeForm"]["Mname"].value.trim();
-        const gender = document.forms["employeeForm"]["gender"].value;
-        const designation =
-          document.forms["employeeForm"]["designation"].value.trim();
-        const dob = document.forms["employeeForm"]["dob"].value;
-        const presentAddress =
-          document.forms["employeeForm"]["present_address"].value.trim();
-        const permanentAddress =
-          document.forms["employeeForm"]["permanent_address"].value.trim();
-        const image = document.forms["employeeForm"]["image"].value;
-
-        if (name === "") {
-          alert("Please enter your Name");
-          return false;
-        }
-        if (fatherName === "") {
-          alert("Please enter your Father’s Name");
-          return false;
-        }
-        if (motherName === "") {
-          alert("Please enter your Mother’s Name");
-          return false;
-        }
-        if (gender === "") {
-          alert("Please select your Gender");
-          return false;
-        }
-        if (designation === "") {
-          alert("Please enter your Designation");
-          return false;
-        }
-        if (dob === "") {
-          alert("Please select your Date of Birth");
-          return false;
-        }
-        if (presentAddress === "") {
-          alert("Please enter your Present Address");
-          return false;
-        }
-        if (permanentAddress === "") {
-          alert("Please enter your Permanent Address");
-          return false;
-        }
-        if (image === "") {
-          alert("Please upload your Image");
-          return false;
-        }
-        alert("Form submitted successfully!");
-        return true;
-      }
-    </script>
   </body>
 </html>
