@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Profile Form</title>
+  </head>
+  <body>
+    <h1 align="center"><u>Employee Profile</u></h1>
+    <form
+      name="employeeForm"
+      onsubmit="returnValidation()"
+      enctype="multipart/form-data"
+    >
+      <table align="center" cellpadding="8">
+        <tr>
+          <td><label for="name">Name: </label></td>
+          <td><input type="text" id="name" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Fname">Father Name: </label>
+          </td>
+          <td><input type="text" id="Fname" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Mname">Mother Name: </label>
+          </td>
+          <td><input type="text" id="Mname" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender">Gender: </label>
+          </td>
+          <td>
+            <select name="gender" id="gender">
+              <option value="--select gender--">--select gender--</option>
+              <option value="male">Male</option>
+              <option value="female-">Female</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="designation">Designation: </label>
+          </td>
+          <td><input type="text" id="designation" /></td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of Birth: </label></td>
+          <td><input type="date" id="dob" name="dob" /></td>
+        </tr>
+        <tr>
+          <td><label for="present_address">Present Address: </label></td>
+          <td>
+            <textarea
+              id="present_address"
+              name="present_address"
+              rows="3"
+              cols="25"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="permanent_address">Permanent Address: </label></td>
+          <td>
+            <textarea
+              id="permanent_address"
+              name="permanent_address"
+              rows="3"
+              cols="25"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="image">Upload Image: </label></td>
+          <td>
+            <input type="file" id="image" name="image" accept="image/*" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <button type="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script>
+      function returnValidation() {
+        const name = document.forms["employeeForm"]["name"].value.trim();
+        const fatherName = document.forms["employeeForm"]["Fname"].value.trim();
+        const motherName = document.forms["employeeForm"]["Mname"].value.trim();
+        const gender = document.forms["employeeForm"]["gender"].value;
+        const designation =
+          document.forms["employeeForm"]["designation"].value.trim();
+        const dob = document.forms["employeeForm"]["dob"].value;
+        const presentAddress =
+          document.forms["employeeForm"]["present_address"].value.trim();
+        const permanentAddress =
+          document.forms["employeeForm"]["permanent_address"].value.trim();
+        const image = document.forms["employeeForm"]["image"].value;
+
+        if (name === "") {
+          alert("Please enter your Name");
+          return false;
+        }
+        if (fatherName === "") {
+          alert("Please enter your Father’s Name");
+          return false;
+        }
+        if (motherName === "") {
+          alert("Please enter your Mother’s Name");
+          return false;
+        }
+        if (gender === "") {
+          alert("Please select your Gender");
+          return false;
+        }
+        if (designation === "") {
+          alert("Please enter your Designation");
+          return false;
+        }
+        if (dob === "") {
+          alert("Please select your Date of Birth");
+          return false;
+        }
+        if (presentAddress === "") {
+          alert("Please enter your Present Address");
+          return false;
+        }
+        if (permanentAddress === "") {
+          alert("Please enter your Permanent Address");
+          return false;
+        }
+        if (image === "") {
+          alert("Please upload your Image");
+          return false;
+        }
+        alert("Form submitted successfully!");
+        return true;
+      }
+    </script>
+  </body>
+</html>
