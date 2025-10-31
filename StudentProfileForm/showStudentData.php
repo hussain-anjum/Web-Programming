@@ -70,8 +70,8 @@ if (mysqli_num_rows($result) > 0) {
         <td><?php echo $row["roll"]; ?></td>
         <td><?php echo $row["regNo"]; ?></td>
         <td><?php echo $row["session"]; ?></td>
-        <td><a href="./editStudentData.php?ID=<?php echo $row["roll"]; ?>">Edit</a> | 
-        <a href="./deleteStudentData.php?ID=<?php echo $row["roll"]; ?>">Delete</a></td>
+        <td><a href="./editStudentData.php?roll=<?php echo $row["roll"]; ?>">Edit</a> | 
+        <a href="./deleteStudentData.php?roll=<?php echo $row["roll"]; ?>">Delete</a></td>
     </tr>
 <?php 
     } 
