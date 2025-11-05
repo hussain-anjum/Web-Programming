@@ -16,9 +16,9 @@ $user = mysqli_fetch_assoc($result);
 <html>
 <head><title>Dashboard</title></head>
 <body>
-    <h2>Hello, <?php echo htmlspecialchars($user["fullname"]); ?>!</h2>
-    <p>Email: <?php echo htmlspecialchars($user["email"]); ?></p>
-    <p>Contact: <?php echo htmlspecialchars($user["contact"]); ?></p>
+    <h2>Hello, <?php echo ($user["fullname"]); ?>!</h2>
+    <p>Email: <?php echo ($user["email"]); ?></p>
+    <p>Contact: <?php echo ($user["contact"]); ?></p>
     <p><a href="logout.php">Logout</a></p>
 </body>
 </html>
