@@ -15,8 +15,8 @@
         <input type="submit" value="Upload">
     </form>
     <hr>
-    <h1 align='center'>Gallery</h1>
 
+    <h1 align='center'>Gallery</h1>
     <div class="gallery-container clearfix">
     <?php
     $sql = "SELECT * FROM images ORDER BY id DESC";
