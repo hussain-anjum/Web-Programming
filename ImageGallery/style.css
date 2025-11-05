@@ -1,0 +1,24 @@
+.gallery-container {
+  width: 660px;
+  margin: 0 auto;
+}
+
+.image-item {
+  width: 200px;
+  margin: 10px;
+  float: left;
+  text-align: center;
+}
+
+.image-item img {
+  width: 200px;
+  height: 150px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
