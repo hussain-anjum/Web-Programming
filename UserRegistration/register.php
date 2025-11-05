@@ -13,9 +13,9 @@ if($_POST["password"] != $confirm_password){
 }
 elseif ($username && $email && $fullname && $contact && $_POST["password"]) {
     $check = "SELECT * FROM users WHERE username='$username'";
-    $res = mysqli_query($conn, $check);
+    $result = mysqli_query($conn, $check);
     
-    if (mysqli_num_rows($res) > 0) {
+    if (mysqli_num_rows($result) > 0) {
         echo "Username already exists. <a href='register.html'>Try again</a>";
     } else {
         $sql = "INSERT INTO users (username, password, email, fullname, contact)

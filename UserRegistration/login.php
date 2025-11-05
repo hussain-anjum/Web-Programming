@@ -6,10 +6,10 @@ $username = trim($_POST["username"]);
 $password = $_POST["password"];
 
 $sql = "SELECT * FROM users WHERE username='$username'";
-$res = mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql);
 
-if (mysqli_num_rows($res) == 1) {
-    $row = mysqli_fetch_assoc($res);
+if (mysqli_num_rows($result) == 1) {
+    $row = mysqli_fetch_assoc($result);
     if (password_verify($password, $row["password"])) {
         $_SESSION["user"] = $username;
         header("Location: dashboard.php");
