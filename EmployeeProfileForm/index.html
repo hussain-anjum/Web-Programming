@@ -19,18 +19,37 @@
           document.forms["employeeForm"]["permanent_address"].value.trim();
         const image = document.forms["employeeForm"]["image"].value;
 
+        const nameFormat = /^[a-zA-Z\s.]+$/;
         if (name == "") {
           alert("Please enter your Name");
           return false;
         }
+
+        if (!nameFormat.test(name)) {
+          alert("Invalid Name Format!");
+          return false;
+        }
+
         if (fatherName == "") {
           alert("Please enter your Father’s Name");
           return false;
         }
+
+        if (!nameFormat.test(fatherName)) {
+          alert("Invalid Father's Name Format!");
+          return false;
+        }
+
         if (motherName == "") {
           alert("Please enter your Mother’s Name");
           return false;
         }
+
+        if (!nameFormat.test(motherName)) {
+          alert("Invalid Mother’s Name Format!");
+          return false;
+        }
+
         if (gender == "") {
           alert("Please select your Gender");
           return false;
