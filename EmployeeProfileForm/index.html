@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee Profile Form</title>
     <script>
-      function Validation() {
+      function formValidation() {
         const name = document.forms["employeeForm"]["name"].value.trim();
         const fatherName = document.forms["employeeForm"]["Fname"].value.trim();
         const motherName = document.forms["employeeForm"]["Mname"].value.trim();
@@ -51,12 +51,16 @@
           alert("Please enter your Permanent Address");
           return false;
         }
-        // Need to fix...
+        const allowFormat = /(\.jpg|\.jpeg|\.png|\.heic)$/i;
         if (image == "") {
           alert("Please upload your Image");
           return false;
         }
-
+        if (!allowFormat.exec(image)) {
+          alert("Please ensure the file format and Try Again.");
+          document.forms["employeeForm"]["image"].value = "";
+          return false;
+        }
         alert("Form submitted successfully!");
         return true;
       }
@@ -66,7 +70,7 @@
     <h1 align="center"><u>Employee Profile</u></h1>
     <form
       name="employeeForm"
-      onsubmit="return Validation()"
+      onsubmit="return formValidation()"
       enctype="multipart/form-data"
     >
       <table align="center" cellpadding="8">
