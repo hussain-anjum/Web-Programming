@@ -50,10 +50,11 @@
           return false;
         }
 
-        if (gender == "") {
+        if (gender == "" || gender == "--select gender--") {
           alert("Please select your Gender");
           return false;
         }
+
         if (designation == "") {
           alert("Please enter your Designation");
           return false;
