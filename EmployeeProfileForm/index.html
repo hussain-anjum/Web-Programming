@@ -6,24 +6,26 @@
     <title>Employee Profile Form</title>
     <script>
       function formValidation() {
-        const name = document.forms["employeeForm"]["name"].value.trim();
-        const fatherName = document.forms["employeeForm"]["Fname"].value.trim();
-        const motherName = document.forms["employeeForm"]["Mname"].value.trim();
-        const gender = document.forms["employeeForm"]["gender"].value;
-        const designation =
-          document.forms["employeeForm"]["designation"].value.trim();
-        const dob = document.forms["employeeForm"]["dob"].value;
-        const presentAddress =
-          document.forms["employeeForm"]["present_address"].value.trim();
-        const permanentAddress =
-          document.forms["employeeForm"]["permanent_address"].value.trim();
-        const image = document.forms["employeeForm"]["image"].value;
+        const name = document.getElementById("name").value.trim();
+        const fatherName = document.getElementById("Fname").value.trim();
+        const motherName = document.getElementById("Mname").value.trim();
+        const gender = document.getElementById("gender").value;
+        const designation = document.getElementById("designation").value.trim();
+        const dob = document.getElementById("dob").value;
+        const presentAddress = document
+          .getElementById("present_address")
+          .value.trim();
+        const permanentAddress = document
+          .getElementById("permanent_address")
+          .value.trim();
+        const image = document.getElementById("image").value;
 
-        const nameFormat = /^[a-zA-Z\s.]+$/;
         if (name == "") {
           alert("Please enter your Name");
           return false;
         }
+
+        const nameFormat = /^[a-zA-Z\s.]+$/;
 
         if (!nameFormat.test(name)) {
           alert("Invalid Name Format!");
@@ -71,14 +73,17 @@
           alert("Please enter your Permanent Address");
           return false;
         }
-        const allowFormat = /(\.jpg|\.jpeg|\.png|\.heic)$/i;
+
         if (image == "") {
           alert("Please upload your Image");
           return false;
         }
-        if (!allowFormat.exec(image)) {
+
+        const allowFormat = /(\.jpg|\.jpeg|\.png|\.heic)$/i;
+
+        if (!allowFormat.test(image)) {
           alert("Please ensure the file format and Try Again.");
-          document.forms["employeeForm"]["image"].value = "";
+          document.getElementById("image").value = "";
           return false;
         }
         alert("Form submitted successfully!");
