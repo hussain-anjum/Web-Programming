@@ -17,7 +17,11 @@ $gender = $_POST['gender'];
 $presentAddress = $_POST['presentAddress'];
 $mobile = $_POST['mobile'];
 $email = $_POST['email'];
-$image = $_POST['image'];
+$image = "";
+if(isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
+    $image = $_FILES['image']['name'];
+    move_uploaded_file($_FILES['image']['tmp_name'], "uploads/" . $image);
+}
 $faculty = $_POST['faculty'];
 $department = $_POST['department'];
 $designation = $_POST['designation'];
