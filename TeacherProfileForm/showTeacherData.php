@@ -78,7 +78,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <?php
 } else {
-  echo "0 results";
+  echo "No results to show :(";
 }
 mysqli_close($conn);
 ?>
