@@ -1,15 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "formdb";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
+include 'conn.php';
 
 $fullName = $_POST['fullName'];
 $NID = $_POST['NID'];
@@ -42,7 +32,7 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 
-echo "<br>Teacher's data are:<br>";
+echo "<br>Submitted Teacher's data are:<br>";
 echo "<pre>";
 print_r($_POST);
 echo "</pre>";

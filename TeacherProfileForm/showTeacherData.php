@@ -13,17 +13,7 @@
 </head>
 <body>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "formdb";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
+include 'conn.php';
 
 $sql = "SELECT * FROM teacherdata";
 $result = mysqli_query($conn, $sql);
