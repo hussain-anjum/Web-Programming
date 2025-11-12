@@ -8,112 +8,157 @@
   <body>
     <h1 align="middle"><u>Teacher Profile Form</u></h1>
 
-    <form action="teacherForm.php" method="post">
+    <form action="teacherForm.php" method="post" enctype="multipart/form-data">
       <!--Personal info-->
-      <section style="text-align: center">
+      <div>
         <fieldset style="background-color: rgb(194, 223, 235)">
-          <legend style="font-size: larger">
+          <legend style="font-size: larger; text-align: center">
             <b><i>Personal Information:</i></b>
           </legend>
-          <br />
-
-          <label for="fullName">Full Name: </label><br />
-          <input type="text" id="name" name="fullName" value="" /><br /><br />
-
-          <label for="nid">NID: </label><br />
-          <input type="text" id="nid" name="NID" value="" /><br />
-
-          <p>Select Gender:</p>
-          <input type="radio" id="male" name="gender" value="Male" />
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="Female" />
-          <label for="female">Female</label><br /><br />
-
-          <label for="Presentaddress">Present Address: </label><br />
-          <textarea name="presentAddress" rows="3" cols="20"></textarea>
-          <br /><br />
-
-          <label for="mobile">Mobile: </label><br />
-          <input type="text" id="mobile" name="mobile" value="" /><br /><br />
-
-          <label for="email">Email: </label><br />
-          <input type="email" id="email" name="email" value="" /><br /><br />
-
-          <label for="imageFile">Attach image: </label>
-          <input type="file" id="imageFile" name="image" /><br /><br />
+          <table align="center" cellpadding="8">
+            <tr>
+              <td><label for="fullName">Full Name: </label></td>
+              <td>
+                <input type="text" id="name" name="fullName" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="nid">NID: </label></td>
+              <td><input type="text" id="nid" name="NID" /></td>
+            </tr>
+            <tr>
+              <td><p>Select Gender:</p></td>
+              <td>
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">Female</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="Presentaddress">Present Address: </label>
+              </td>
+              <td>
+                <textarea name="presentAddress" rows="3" cols="20"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="mobile">Mobile: </label></td>
+              <td><input type="text" id="mobile" name="mobile" value="" /></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email: </label></td>
+              <td><input type="email" id="email" name="email" value="" /></td>
+            </tr>
+            <tr>
+              <td><label for="imageFile">Attach Image: </label></td>
+              <td>
+                <input
+                  type="file"
+                  id="imageFile"
+                  name="image"
+                  accept="image/*"
+                />
+              </td>
+            </tr>
+          </table>
         </fieldset>
-      </section>
+      </div>
 
       <!--Professional Info-->
-      <section style="text-align: center">
+      <div>
         <br />
         <fieldset style="background-color: rgb(249, 235, 222)">
-          <legend style="font-size: larger">
+          <legend style="font-size: larger; text-align: center">
             <b><i>Professional Information:</i></b>
           </legend>
-          <br />
-
-          <label for="faculty">Select Faculty: </label>
-          <select id="faculty" name="faculty">
-            <option value="Science&Engg.">
-              Faculty Of Science and Engineering
-            </option>
-            <option value="Arts">Faculty Of Arts</option>
-            <option value="BBA">Faculty Of BBA</option>
-            <option value="SocialScience">
-              Faculty Of Social Science
-            </option></select
-          ><br /><br />
-
-          <label for="dept">Select Department: </label>
-          <select id="dept" name="department">
-            <option value="CSE">Department Of CSE</option>
-            <option value="EEE">Department Of EEE</option>
-            <option value="ESE">Department of ESE</option></select
-          ><br /><br />
-
-          <label for="designation">Designation: </label><br />
-          <select id="designation" name="designation">
-            <option value="Professor">Professor</option>
-            <option value="Associate Professor">Associate Professor</option>
-            <option value="Assistant Professor">Assistant Professor</option>
-            <option value="Lecturer">Lecturer</option></select
-          ><br /><br />
-
-          <label for="joiningDate">Joining Date: </label><br />
-          <input
-            type="date"
-            id="joiningDate"
-            name="joiningDate"
-            value=""
-          /><br /><br />
-
-          <label for="qualification">Highest Qualification: </label><br />
-          <input
-            type="text"
-            id="qualification"
-            name="qualification"
-            value=""
-          /><br /><br />
-
-          <label for="experience">Years of Experience: </label><br />
-          <input
-            type="number"
-            id="experience"
-            name="experience"
-            min="0"
-            value=""
-          /><br /><br />
+          <table align="center" cellpadding="8">
+            <tr>
+              <td><label for="faculty">Faculty: </label></td>
+              <td>
+                <select id="faculty" name="faculty">
+                  <option value="Science&Engg.">
+                    Faculty Of Science and Engineering
+                  </option>
+                  <option value="Arts">Faculty Of Arts</option>
+                  <option value="BBA">Faculty Of BBA</option>
+                  <option value="SocialScience">
+                    Faculty Of Social Science
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="dept">Department: </label></td>
+              <td>
+                <select id="dept" name="department">
+                  <option value="CSE">Department Of CSE</option>
+                  <option value="EEE">Department Of EEE</option>
+                  <option value="ESE">Department of ESE</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="designation">Designation: </label></td>
+              <td>
+                <select id="designation" name="designation">
+                  <option value="Professor">Professor</option>
+                  <option value="Associate Professor">
+                    Associate Professor
+                  </option>
+                  <option value="Assistant Professor">
+                    Assistant Professor
+                  </option>
+                  <option value="Lecturer">Lecturer</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="joiningDate">Joining Date: </label><br /></td>
+              <td>
+                <input
+                  type="date"
+                  id="joiningDate"
+                  name="joiningDate"
+                  value=""
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="qualification">Qualification: </label><br /></td>
+              <td>
+                <input
+                  type="text"
+                  id="qualification"
+                  name="qualification"
+                  value=""
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="experience">Experience: </label></td>
+              <td>
+                <input
+                  type="number"
+                  id="experience"
+                  name="experience"
+                  min="0"
+                  value=""
+                />
+              </td>
+            </tr>
+          </table>
         </fieldset>
-      </section>
+      </div>
       <br />
 
       <!--Submit button-->
-      <section style="text-align: center">
+      <div style="text-align: center">
         <button type="submit">
           <b>Submit</b>
         </button>
-      </section>
+      </div>
     </form>
   </body>
 </html>
