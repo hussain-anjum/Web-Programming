@@ -19,17 +19,23 @@
             <tr>
               <td><label for="fullName">Full Name: </label></td>
               <td>
-                <input type="text" id="name" name="fullName" />
+                <input type="text" id="name" name="fullName" required />
               </td>
             </tr>
             <tr>
               <td><label for="nid">NID: </label></td>
-              <td><input type="text" id="nid" name="NID" /></td>
+              <td><input type="text" id="nid" name="NID" required /></td>
             </tr>
             <tr>
               <td><p>Select Gender:</p></td>
               <td>
-                <input type="radio" id="male" name="gender" value="Male" />
+                <input
+                  type="radio"
+                  id="male"
+                  name="gender"
+                  value="Male"
+                  required
+                />
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="Female" />
                 <label for="female">Female</label>
@@ -40,16 +46,31 @@
                 <label for="Presentaddress">Present Address: </label>
               </td>
               <td>
-                <textarea name="presentAddress" rows="3" cols="20"></textarea>
+                <textarea
+                  name="presentAddress"
+                  rows="3"
+                  cols="20"
+                  required
+                ></textarea>
               </td>
             </tr>
             <tr>
               <td><label for="mobile">Mobile: </label></td>
-              <td><input type="text" id="mobile" name="mobile" value="" /></td>
+              <td>
+                <input
+                  type="text"
+                  id="mobile"
+                  name="mobile"
+                  value=""
+                  required
+                />
+              </td>
             </tr>
             <tr>
               <td><label for="email">Email: </label></td>
-              <td><input type="email" id="email" name="email" value="" /></td>
+              <td>
+                <input type="email" id="email" name="email" value="" required />
+              </td>
             </tr>
             <tr>
               <td><label for="imageFile">Attach Image: </label></td>
@@ -59,6 +80,7 @@
                   id="imageFile"
                   name="image"
                   accept="image/*"
+                  required
                 />
               </td>
             </tr>
@@ -122,6 +144,7 @@
                   id="joiningDate"
                   name="joiningDate"
                   value=""
+                  required
                 />
               </td>
             </tr>
@@ -133,6 +156,7 @@
                   id="qualification"
                   name="qualification"
                   value=""
+                  required
                 />
               </td>
             </tr>
@@ -145,6 +169,7 @@
                   name="experience"
                   min="0"
                   value=""
+                  required
                 />
               </td>
             </tr>
