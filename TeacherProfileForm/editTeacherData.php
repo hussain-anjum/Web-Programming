@@ -82,13 +82,27 @@ mysqli_close($conn);
     <input type="text" name="image" value="<?php echo $row['image']; ?>"><br><br>
 
     <label>Faculty:</label><br>
-    <input type="text" name="faculty" value="<?php echo $row['faculty']; ?>"><br><br>
+    <select name="faculty">
+      <option value="Science&Engg." <?php if($row['faculty'] == "Science&Engg.") echo "selected"; ?>>Faculty Of Science and Engineering</option>
+      <option value="Arts" <?php if($row['faculty'] == "Arts") echo "selected"; ?>>Faculty Of Arts</option>
+      <option value="BBA" <?php if($row['faculty'] == "BBA") echo "selected"; ?>>Faculty Of BBA</option>
+      <option value="SocialScience" <?php if($row['faculty'] == "SocialScience") echo "selected"; ?>>Faculty Of Social Science</option>
+    </select><br><br>
 
-    <label>Department:</label><br>
-    <input type="text" name="department" value="<?php echo $row['department']; ?>"><br><br>
+    <label for="department">Department:</label><br>
+    <select name="department">
+      <option value="CSE" <?php if($row['department'] == "CSE") echo "selected"; ?>>Department Of CSE</option>
+      <option value="EEE" <?php if($row['department'] == "EEE") echo "selected"; ?>>Department Of EEE</option>
+      <option value="ESE" <?php if($row['department'] == "ESE") echo "selected"; ?>>Department of ESE</option>
+    </select><br><br>
 
     <label>Designation:</label><br>
-    <input type="text" name="designation" value="<?php echo $row['designation']; ?>"><br><br>
+    <select name="designation">
+      <option value="Professor" <?php if($row['designation'] == "Professor") echo "selected"; ?>>Professor</option>
+      <option value="Associate Professor" <?php if($row['designation'] == "Associate Professor") echo "selected"; ?>>Associate Professor</option>
+      <option value="Assistant Professor" <?php if($row['designation'] == "Assistant Professor") echo "selected"; ?>>Assistant Professor</option>
+      <option value="Lecturer" <?php if($row['designation'] == "Lecturer") echo "selected"; ?>>Lecturer</option>
+    </select><br><br>
 
     <label>Joining Date:</label><br>
     <input type="date" name="joiningDate" value="<?php echo $row['joiningDate']; ?>"><br><br>
