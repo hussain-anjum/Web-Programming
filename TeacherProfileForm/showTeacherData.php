@@ -40,7 +40,6 @@ if (mysqli_num_rows($result) > 0) {
         <th>Action</th>
     </tr>
 <?php
-  // output data of each row
   while($row = mysqli_fetch_assoc($result)) { 
 ?>
     <tr>
