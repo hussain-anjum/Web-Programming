@@ -14,18 +14,19 @@ Each exercise focuses on practical web development using **PHP, JavaScript, HTML
 
 ## ✅ Completed Problems
 
-| No. | Problem Title                  | Description                                                                          | Folder                      |
-| :-: | ------------------------------ | ------------------------------------------------------------------------------------ | --------------------------- |
-|  1  | Student Profile Validation     | Insert and validate student informations                                             | `StudentProfileValidation/` |
-|  2  | Product Profiles               | Insert and display product profiles in a database.                                   | `ProductProfileForm/`       |
-|  3  | DHTML Events                   | Show a message “I am a CSE student” for OnMouseOver, OnClick, and OnKeyPress events. | `dhtmlEvents/`              |
-|  4  | Personal Profile               | Display a personal profile with meaningful attributes.                               | `PersonalProfile/`          |
-|  6  | Student Profiles (Edit/Delete) | Show all data stored in a student profiles database.                                 | `StudentProfileForm/`       |
-|  7  | Teacher Profiles (Edit/Delete) | Edit and update teacher profile data stored in a database.                           | `TeacherProfileForm/`       |
-|  8  | Employee Profiles              | Insert employee info and validate input data.                                        | `EmployeeProfileForm/`      |
-| 11  | Electronics Product Info       | Insert product information into the database.                                        | `ElectronicsProductForm/`   |
-| 13  | Image Gallery                  | Upload and display images in a gallery format.                                       | `ImageGallery/`             |
-| 15  | User Registration              | Implement user registration with username, password, email, name, and contact.       | `UserRegistration/`         |
+| No. | Problem Title                  | Description                                                                          | Folder                       |
+| :-: | ------------------------------ | ------------------------------------------------------------------------------------ | ---------------------------- |
+|  1  | Student Profile Validation     | Insert and validate student informations                                             | `StudentProfileValidation/`  |
+|  2  | Product Profiles               | Insert and display product profiles in a database.                                   | `ProductProfileForm/`        |
+|  3  | DHTML Events                   | Show a message “I am a CSE student” for OnMouseOver, OnClick, and OnKeyPress events. | `dhtmlEvents/`               |
+|  4  | Personal Profile               | Display a personal profile with meaningful attributes.                               | `PersonalProfile/`           |
+|  5  | Employee Profile Form          | Store all data in a database retrieving from a form containing employees's profiles. | `EmployeeProfileForm/`       |
+|  6  | Student Profiles (Edit/Delete) | Show all data stored in a student profiles database.                                 | `StudentProfileForm/`        |
+|  7  | Teacher Profiles (Edit/Delete) | Edit and update teacher profile data stored in a database.                           | `TeacherProfileForm/`        |
+|  8  | Employee Profile Validation    | Insert employee info and validate input data.                                        | `EmployeeProfileValidation/` |
+| 11  | Electronics Product Info       | Insert product information into the database.                                        | `ElectronicsProductForm/`    |
+| 13  | Image Gallery                  | Upload and display images in a gallery format.                                       | `ImageGallery/`              |
+| 15  | User Registration              | Implement user registration with username, password, email, name, and contact.       | `UserRegistration/`          |
 
 ---
 
