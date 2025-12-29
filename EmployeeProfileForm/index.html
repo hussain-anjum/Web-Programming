@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Profile</title>
+  </head>
+  <body>
+    <h1 align="center">Employee Information Form</h1>
+    <form action="insertEmployee.php" method="post">
+      <table align="center">
+        <tr>
+          <td><label for="full_name">Full Name:</label></td>
+          <td>
+            <input type="text" id="full_name" name="full_name" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email Address:</label></td>
+          <td><input type="email" id="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone Number:</label></td>
+          <td>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="01[3-9][0-9]{8}"
+              placeholder="01XXXXXXXXX"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="marital_status">Marital Status:</label></td>
+          <td>
+            <select id="marital_status" name="marital_status">
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+              <option value="divorced">Divorced</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="position">Job Position:</label></td>
+          <td><input type="text" id="position" name="position" required /></td>
+        </tr>
+        <tr>
+          <td><label for="company">Company Name:</label></td>
+          <td><input type="text" id="company" name="company" /></td>
+        </tr>
+        <tr>
+          <td><label for="years_of_experience">Years of Experience:</label></td>
+          <td>
+            <input
+              type="number"
+              id="years_of_experience"
+              name="years_of_experience"
+              min="0"
+              max="10"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="skills">Skills:</label></td>
+          <td>
+            <input
+              type="checkbox"
+              id="skill1"
+              name="skills[]"
+              value="HTML/CSS"
+            />
+            <label for="skill1">HTML/CSS</label><br />
+            <input
+              type="checkbox"
+              id="skill2"
+              name="skills[]"
+              value="JavaScript"
+            />
+            <label for="skill2">JavaScript</label><br />
+            <input type="checkbox" id="skill3" name="skills[]" value="Python" />
+            <label for="skill2">Python</label><br />
+            <input type="checkbox" id="skill4" name="skills[]" value="PHP" />
+            <label for="skill4">PHP</label><br />
+            <input type="checkbox" id="skill5" name="skills[]" value="React" />
+            <label for="skill5">React</label><br />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <br /><input type="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
