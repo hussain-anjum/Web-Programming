@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="stat">Status: waiting for key press...</p>
+    <input
+      type="text"
+      placeholder="Press any key"
+      onkeydown="keyStatus1()"
+      onkeypress="keyStatus2()"
+      onkeyup="keyStatus3()"
+    />
+
+    <p id="mouse">Status: waiting...</p>
+    <button onclick="mouseEvent1()">Click me!</button><br /><br />
+    <button onmouseover="mouseEvent2()" onmouseout="mouseEvent3()">
+      Over on me!</button
+    ><br /><br />
+
+    <script>
+      function mouseEvent1() {
+        let p1 = document.getElementById("mouse");
+        p1.innerHTML = "Status: mouse Clicked";
+      }
+      function mouseEvent2() {
+        let p1 = document.getElementById("mouse");
+        p1.innerHTML = "Status: mouse over";
+      }
+      function mouseEvent3() {
+        let p1 = document.getElementById("mouse");
+        p1.innerHTML = "Status: mouse out";
+      }
+
+      function keyStatus1() {
+        let p1 = document.getElementById("stat");
+        p1.innerHTML = "Status: keyDown";
+      }
+      function keyStatus2() {
+        let p2 = document.getElementById("stat");
+        p2.innerHTML = "Status: keyPress";
+      }
+      function keyStatus3() {
+        let p3 = document.getElementById("stat");
+        p3.innerHTML = "Status: keyUp";
+      }
+    </script>
+  </body>
+</html>
