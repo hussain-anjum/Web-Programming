@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Employment Information Form</title>
+  </head>
+  <body>
+    <h1 align="center">Employment Information Form</h1>
+    <form id="employeeForm" action="validation.php" method="post">
+      <table align="center">
+        <tr>
+          <td><label for="full_name">Full Name:</label></td>
+          <td><input type="text" id="full_name" name="full_name" /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email Address:</label></td>
+          <td><input type="text" id="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone Number:</label></td>
+          <td>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="01XXXXXXXXX"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="marital_status">Marital Status:</label></td>
+          <td>
+            <select id="marital_status" name="marital_status">
+              <option value="">--Select--</option>
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+              <option value="divorced">Divorced</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="position">Job Position:</label></td>
+          <td><input type="text" id="position" name="position" /></td>
+        </tr>
+        <tr>
+          <td><label for="company">Company Name:</label></td>
+          <td><input type="text" id="company" name="company" /></td>
+        </tr>
+        <tr>
+          <td><label for="experience">Years of Experience:</label></td>
+          <td>
+            <input
+              type="number"
+              id="experience"
+              name="experience"
+              min="0"
+              max="10"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="skills">Skills:</label></td>
+          <td>
+            <input
+              type="checkbox"
+              id="skill1"
+              name="skills[]"
+              value="JavaScript"
+            /><label for="skill1">JavaScript</label><br />
+            <input type="checkbox" id="skill2" name="skills[]" value="Python" />
+            <label for="skill2">Python</label><br />
+            <input
+              type="checkbox"
+              id="skill3"
+              name="skills[]"
+              value="HTML/CSS"
+            />
+            <label for="skill3">HTML/CSS</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <br />
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
