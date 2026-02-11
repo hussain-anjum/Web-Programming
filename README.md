@@ -25,6 +25,7 @@ Each exercise focuses on practical web development using **PHP, JavaScript, HTML
 |  7  | Teacher Profiles (Edit/Delete)     | Edit and update teacher profile data stored in a database.                           | `TeacherProfileForm/`         |
 |  8  | Employee Profile Validation        | Insert employee info and validate input using JS.                                    | `EmployeeProfileValidation/`  |
 |  9  | Employee Profile Validation in PHP | Insert employee info and validate input using PHP.                                   | `EmployeeProfileValidation2/` |
+| 10  | Admin Panel with a demo page       | Insert username and password to access admin demo page and security page.            | `AdminPanel/`                 |
 | 11  | Electronics Product Info           | Insert product information into the database.                                        | `ElectronicsProductForm/`     |
 | 13  | Image Gallery                      | Upload and display images in a gallery format.                                       | `ImageGallery/`               |
 | 15  | User Registration                  | Implement user registration with username, password, email, name, and contact.       | `UserRegistration/`           |
