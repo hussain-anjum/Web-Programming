@@ -29,8 +29,7 @@ Each exercise focuses on practical web development using **PHP, JavaScript, HTML
 | 11  | Electronics Product Info           | Insert product information into the database.                                         | `ElectronicsProductForm/`     |
 | 12  | Student Profiles (Edit/Delete)     | Show all profiles stored in a student profiles database with edit and delete options. | `StudentProfileForm/`         |
 | 13  | Image Gallery                      | Upload and display images in a gallery format.                                        | `ImageGallery/`               |
+| 14  | Online Graduate Admission Apply    | Insert data related to applying online for graduate admission and show that profile.  | `GraduateAdmissionOnline/`    |
 | 15  | User Registration                  | Implement user registration with username, password, email, name, and contact.        | `UserRegistration/`           |
 
 ---
-
-_More problems will be added soon._
