@@ -8,7 +8,7 @@ if (!isset($_SESSION["user"])) {
 }
 
 $username = $_SESSION["user"];
-$sql = "SELECT fullname, email, contact FROM users WHERE username='$username'";
+$sql = "SELECT fullname, email, contact FROM userreg WHERE username='$username'";
 $result = mysqli_query($conn, $sql);
 $user = mysqli_fetch_assoc($result);
 ?>
@@ -16,9 +16,9 @@ $user = mysqli_fetch_assoc($result);
 <html>
 <head><title>Dashboard</title></head>
 <body>
-    <h2>Hello, <?php echo ($user["fullname"]); ?>!</h2>
-    <p>Email: <?php echo ($user["email"]); ?></p>
-    <p>Contact: <?php echo ($user["contact"]); ?></p>
+    <h2>Hello, <?php echo $user["fullname"]; ?>!</h2>
+    <p>Email: <?php echo $user["email"]; ?></p>
+    <p>Contact: <?php echo $user["contact"]; ?></p>
     <p><a href="logout.php">Logout</a></p>
 </body>
 </html>
