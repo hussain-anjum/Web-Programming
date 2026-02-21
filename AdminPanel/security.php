@@ -9,9 +9,11 @@ if (!isset($_SESSION['username'])) {
 <html>
 <head><title>Security Page</title></head>
 <body>
-<h2>Security Page</h2>
-<p>This page is only accessible to logged-in users.</p>
-
-<p><a href="admin.php">Back to Admin Demo</a> | <a href="logout.php">Logout</a></p>
+    <h2>Security Page</h2>
+    <p>This page is only accessible to logged-in users.</p>
+    <p>
+        <a href="admin.php">Back to Admin</a> | 
+        <a href="logout.php">Logout</a>
+    </p>
 </body>
 </html>
