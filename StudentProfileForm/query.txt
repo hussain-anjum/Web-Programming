@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS formdb;
+
+USE formdb;
+
+CREATE TABLE studentdata (
+    roll VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(100),
+    fatherName VARCHAR(100),
+    motherName VARCHAR(100),
+    dob DATE,
+    gender VARCHAR(10),
+    presentAddress TEXT,
+    mobile VARCHAR(15),
+    email VARCHAR(100),
+    image VARCHAR(255),
+    faculty VARCHAR(50),
+    department VARCHAR(50),
+    hallName VARCHAR(50),
+    regNo VARCHAR(50),
+    session VARCHAR(20)
+);

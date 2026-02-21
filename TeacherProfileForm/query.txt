@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS formdb;
+
+USE formdb;
+
+CREATE TABLE teacherdata (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    fullName VARCHAR(100),
+    NID VARCHAR(20),
+    gender VARCHAR(10),
+    presentAddress TEXT,
+    mobile VARCHAR(15),
+    email VARCHAR(100),
+    image VARCHAR(255),
+    faculty VARCHAR(50),
+    department VARCHAR(50),
+    designation VARCHAR(50),
+    joiningDate DATE,
+    qualification VARCHAR(100),
+    experience INT
+);

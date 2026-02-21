@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS formdb;
+
+USE formdb;
+
+CREATE TABLE productdata (
+    Product_id INT PRIMARY KEY,
+    Product_Name VARCHAR(100),
+    Product_Image VARCHAR(255),
+    Category VARCHAR(50),
+    Price DECIMAL(10, 2),
+    Description TEXT,
+    Quantity INT,
+    Manufacturer VARCHAR(100),
+    Release_Date DATE
+);

@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS formdb;
+
+USE formdb;
+
+CREATE TABLE electronics (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(100),
+    brand VARCHAR(100),
+    model_number VARCHAR(100),
+    category VARCHAR(50),
+    price DECIMAL(10, 2),
+    quantity INT,
+    warranty_months INT,
+    description TEXT
+);
